@@ -1,0 +1,21 @@
+==== Instalasi MYSQL-SERVER ==== 
+
++ sudo apt-get update
++ sudo apt -y install mysql-server
+
+==== Edit Password MYSQL-SERVER ====
+
++ sudo mysql
++ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
++ FLUSH PRIVILEGES;
++ exit
+                                                            
+==== Run MYSQL-SERVER ====
+
++ sudo su
++ mysql -u root -p
+  Enter password:*********
++ show databases;
++ exit
+                                                            
+==== Thank you very much :) ====
